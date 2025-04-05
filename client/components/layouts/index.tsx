@@ -23,7 +23,7 @@ export default function Layout({
           }
         </div>
         <footer className="border-t border-dashed border-t-zinc-800 py-4">
-          <p className="text-sm text-center font-semibold">Copyright © 2025</p>
+          <p className="text-sm text-center font-semibold">Copyright &copy; 2025. All rights reserved.</p>
         </footer>
       </main>
       <ToastContainer theme="dark" />

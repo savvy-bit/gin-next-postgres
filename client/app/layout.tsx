@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { AuthProvider } from "@/context/AuthContext";
 import Layout from "@/components/layouts";
+import ReduxProvider from "@/components/layouts/ReduxProvider";
 
 export const metadata: Metadata = {
   title: "Gin + Next.js",
@@ -25,9 +26,11 @@ export default function RootLayout({
         className={`${roboto.className} text-[14px] antialiased`}
       >
         <AuthProvider>
-          <Layout>
-            {children}
-          </Layout>
+          <ReduxProvider>
+            <Layout>
+              {children}
+            </Layout>
+          </ReduxProvider>
         </AuthProvider>
       </body>
     </html>
